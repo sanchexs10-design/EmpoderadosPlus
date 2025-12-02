@@ -40,6 +40,10 @@ a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.hero--compact {
+  padding-bottom: 48px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -84,6 +88,14 @@ a:hover {
   gap: 32px;
   align-items: center;
   margin-top: 24px;
+}
+
+.hero__content--center {
+  justify-items: center;
+}
+
+.hero__text--narrow {
+  max-width: 720px;
 }
 
 .hero__text h1 {
@@ -248,6 +260,35 @@ a:hover {
   color: var(--muted);
 }
 
+.spotlight .card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.spotlight__content h2 {
+  margin: 8px 0;
+}
+
+.spotlight__badge {
+  background: var(--pill);
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+.spotlight__badge h3 {
+  margin: 4px 0;
+}
+
+.contact-hint .card {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .cta {
   background: linear-gradient(90deg, rgba(255, 183, 3, 0.14), rgba(255, 183, 3, 0));
   border-block: 1px solid rgba(255, 255, 255, 0.08);
@@ -346,5 +387,9 @@ a:hover {
   .cta__content {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .spotlight .card {
+    grid-template-columns: 1fr;
   }
 }

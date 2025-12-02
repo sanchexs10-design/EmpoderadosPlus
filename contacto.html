@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Empoderados Plus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero hero--compact">
+    <div class="nav">
+      <div class="brand">Empoderados <span>Plus</span></div>
+      <nav>
+        <a href="index.html#beneficios">Beneficios</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="simulador.html">Simulador</a>
+      </nav>
+    </div>
+    <div class="hero__content hero__content--center">
+      <div class="hero__text hero__text--narrow">
+        <p class="eyebrow">Contacto directo</p>
+        <h1>Conversemos sobre tu siguiente paso financiero</h1>
+        <p class="lede">Déjanos tus datos y te responderemos desde <strong>hernan.sanchez@bancamia.com.co</strong> con una propuesta personalizada para tu negocio.</p>
+        <div class="hero__cta">
+          <a class="btn btn-ghost" href="index.html">Volver al inicio</a>
+          <a class="btn btn-secondary" href="simulador.html">Simular primero</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact">
+      <div class="section__header">
+        <h2>Escríbenos desde el portal</h2>
+        <p>La información se enviará directamente a nuestro especialista Empoderados Plus.</p>
+      </div>
+      <div class="contact__layout">
+        <form class="card form" id="contact-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu negocio"></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p class="note">Al enviar, abriremos tu gestor de correo con la información lista para envío a hernan.sanchez@bancamia.com.co.</p>
+        </form>
+        <div class="card contact-info">
+          <h3>Empoderados Plus</h3>
+          <p>Programas y soluciones financieras para microempresarios.</p>
+          <ul>
+            <li><strong>Correo:</strong> hernan.sanchez@bancamia.com.co</li>
+            <li><strong>Horario:</strong> Lunes a viernes, 8:00 a.m. a 5:30 p.m.</li>
+            <li><strong>Canales:</strong> Atención virtual y presencial.</li>
+          </ul>
+          <p class="note">Un especialista te acompañará con información completa sobre tasas, requisitos y tiempos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand">Empoderados <span>Plus</span></div>
+    <p>Impulsando microempresarios con el respaldo de Bancamía y Fundación BBVA Microfinanzas.</p>
+    <div class="footer__links">
+      <a href="index.html#beneficios">Beneficios</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="simulador.html">Simulador</a>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -15,9 +15,9 @@
       <div class="brand">Empoderados <span>Plus</span></div>
       <nav>
         <a href="#beneficios">Beneficios</a>
-        <a href="#simulador">Simulador</a>
         <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
+        <a href="simulador.html">Simulador</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </div>
     <div class="hero__content">
@@ -26,8 +26,8 @@
         <h1>Haz crecer tu emprendimiento con <span>Empoderados Plus</span></h1>
         <p class="lede">Convierte tu idea en un gran negocio con beneficios exclusivos, tasas especiales y la asesoría de confianza del equipo Bancamía.</p>
         <div class="hero__cta">
-          <a class="btn btn-primary" href="#simulador">Simular mi crédito</a>
-          <a class="btn btn-ghost" href="#contacto">Hablar con un especialista</a>
+          <a class="btn btn-primary" href="simulador.html">Simular mi crédito</a>
+          <a class="btn btn-ghost" href="contacto.html">Hablar con un especialista</a>
         </div>
         <div class="hero__badges">
           <div class="badge">Atención personalizada</div>
@@ -75,44 +75,6 @@
       </div>
     </section>
 
-    <section id="simulador" class="section simulator">
-      <div class="section__header">
-        <h2>Simula tu crédito en segundos</h2>
-        <p>Prueba diferentes montos y plazos para proyectar tu cuota mensual.</p>
-      </div>
-      <div class="simulator__layout">
-        <form class="card form" id="simulator-form">
-          <label for="monto">Monto deseado (COP)</label>
-          <input type="number" id="monto" name="monto" placeholder="5,000,000" required min="500000" step="50000" />
-
-          <label for="plazo">Plazo (meses)</label>
-          <input type="number" id="plazo" name="plazo" placeholder="24" required min="6" max="72" />
-
-          <label for="tasa">Tasa efectiva anual (%)</label>
-          <input type="number" id="tasa" name="tasa" placeholder="23" required min="5" max="60" step="0.1" />
-
-          <button type="submit" class="btn btn-primary">Calcular</button>
-        </form>
-
-        <div class="card results" id="results">
-          <p class="label">Resultado estimado</p>
-          <h3 id="cuota">$0</h3>
-          <p class="small">Cuota mensual aproximada</p>
-          <div class="result-grid">
-            <div>
-              <p class="label">Interés total</p>
-              <p id="interes">$0</p>
-            </div>
-            <div>
-              <p class="label">Total a pagar</p>
-              <p id="total">$0</p>
-            </div>
-          </div>
-          <p class="note">Simulación referencial. Nuestros especialistas ajustarán la oferta a tu realidad.</p>
-        </div>
-      </div>
-    </section>
-
     <section id="servicios" class="section services">
       <div class="section__header">
         <h2>Servicios Empoderados Plus</h2>
@@ -152,44 +114,32 @@
       </div>
     </section>
 
+    <section class="section spotlight">
+      <div class="card spotlight__content">
+        <div>
+          <p class="pill">Herramientas</p>
+          <h2>Simula, compara y decide con datos claros</h2>
+          <p>Prueba diferentes montos, plazos y tasas en nuestro simulador dedicado. Guarda tus resultados y conversa con tu especialista para elegir la mejor opción.</p>
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="simulador.html">Ir al simulador</a>
+            <a class="btn btn-ghost" href="contacto.html">Solicitar acompañamiento</a>
+          </div>
+        </div>
+        <div class="spotlight__badge">
+          <p class="label">Acceso 24/7</p>
+          <h3>Simula en línea</h3>
+          <p class="note">Resultados inmediatos con estimaciones de cuota, interés y total a pagar.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section cta">
       <div class="cta__content">
         <div>
           <h2>Comunícate con tu especialista de confianza</h2>
           <p>Déjanos tus datos y recibirás contacto directo desde <a href="mailto:hernan.sanchez@bancamia.com.co">hernan.sanchez@bancamia.com.co</a>.</p>
         </div>
-        <a class="btn btn-secondary" href="mailto:hernan.sanchez@bancamia.com.co?subject=Quiero%20saber%20más%20de%20Empoderados%20Plus">Escríbenos ahora</a>
-      </div>
-    </section>
-
-    <section id="contacto" class="section contact">
-      <div class="section__header">
-        <h2>Llámanos o escribe</h2>
-        <p>Resolvemos tus dudas y construimos juntos la ruta de crecimiento.</p>
-      </div>
-      <div class="contact__layout">
-        <form class="card form" id="contact-form" action="mailto:hernan.sanchez@bancamia.com.co" method="post" enctype="text/plain">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
-
-          <label for="correo">Correo electrónico</label>
-          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
-
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu negocio"></textarea>
-
-          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-        </form>
-        <div class="card contact-info">
-          <h3>Empoderados Plus</h3>
-          <p>Programas y soluciones financieras para microempresarios.</p>
-          <ul>
-            <li><strong>Correo:</strong> hernan.sanchez@bancamia.com.co</li>
-            <li><strong>Horario:</strong> Lunes a viernes, 8:00 a.m. a 5:30 p.m.</li>
-            <li><strong>Canales:</strong> Atención virtual y presencial.</li>
-          </ul>
-          <p class="note">Un especialista te acompañará con información completa sobre tasas, requisitos y tiempos.</p>
-        </div>
+        <a class="btn btn-secondary" href="contacto.html">Ir al formulario</a>
       </div>
     </section>
   </main>
@@ -200,7 +150,7 @@
     <div class="footer__links">
       <a href="#beneficios">Beneficios</a>
       <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
+      <a href="contacto.html">Contacto</a>
     </div>
   </footer>
 
