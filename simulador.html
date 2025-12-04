@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador | Empoderados Plus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero hero--compact">
+    <div class="nav">
+      <div class="brand">Empoderados <span>Plus</span></div>
+      <nav>
+        <a href="index.html#beneficios">Beneficios</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+    <div class="hero__content hero__content--center">
+      <div class="hero__text hero__text--narrow">
+        <p class="eyebrow">Simulador en línea</p>
+        <h1>Calcula tu crédito con la seguridad de Empoderados Plus</h1>
+        <p class="lede">Prueba diferentes escenarios para estimar tu cuota mensual, el interés total y el pago final antes de solicitar tu financiación.</p>
+        <div class="hero__cta">
+          <a class="btn btn-ghost" href="index.html">Volver al inicio</a>
+          <a class="btn btn-secondary" href="contacto.html">Hablar con un especialista</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section simulator">
+      <div class="section__header">
+        <h2>Simula tu crédito en segundos</h2>
+        <p>Ingresa monto, plazo y tasa para proyectar tu plan de pagos.</p>
+      </div>
+      <div class="simulator__layout">
+        <form class="card form" id="simulator-form">
+          <label for="monto">Monto deseado (COP)</label>
+          <input type="number" id="monto" name="monto" placeholder="5,000,000" required min="500000" step="50000" />
+
+          <label for="plazo">Plazo (meses)</label>
+          <input type="number" id="plazo" name="plazo" placeholder="24" required min="6" max="72" />
+
+          <label for="tasa">Tasa efectiva anual (%)</label>
+          <input type="number" id="tasa" name="tasa" placeholder="23" required min="5" max="60" step="0.1" />
+
+          <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+
+        <div class="card results" id="results">
+          <p class="label">Resultado estimado</p>
+          <h3 id="cuota">$0</h3>
+          <p class="small">Cuota mensual aproximada</p>
+          <div class="result-grid">
+            <div>
+              <p class="label">Interés total</p>
+              <p id="interes">$0</p>
+            </div>
+            <div>
+              <p class="label">Total a pagar</p>
+              <p id="total">$0</p>
+            </div>
+          </div>
+          <p class="note">Simulación referencial. Nuestros especialistas ajustarán la oferta a tu realidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-hint">
+      <div class="card contact-info">
+        <h3>¿Quieres iniciar tu solicitud?</h3>
+        <p>Comparte tus datos y recibe seguimiento personalizado de un especialista Empoderados Plus.</p>
+        <div class="hero__cta">
+          <a class="btn btn-secondary" href="contacto.html">Ir al formulario</a>
+          <a class="btn btn-ghost" href="mailto:hernan.sanchez@bancamia.com.co?subject=Quiero%20mi%20cr%C3%A9dito%20Empoderados%20Plus">Correo directo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand">Empoderados <span>Plus</span></div>
+    <p>Impulsando microempresarios con el respaldo de Bancamía y Fundación BBVA Microfinanzas.</p>
+    <div class="footer__links">
+      <a href="index.html#beneficios">Beneficios</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
